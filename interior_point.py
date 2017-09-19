@@ -5,7 +5,7 @@ import numpy as np
 # Built for python 3+
 # Works on python2.7
 
-class Barrier_Method(object):
+class Barrier_Optimizer(object):
 
     # Initializes Barrier_Method object, with constraints, parameters,  and 
     # objective function
@@ -134,6 +134,6 @@ if __name__ == '__main__':
                                         [0,0,-1]])
 
     constraints = np.matrix([1,2,3,-4,3,-1])
-    optimizer = Barrier_Method(objective_function, constraint_coefficients,
+    optimizer = Barrier_Optimizer(objective_function, constraint_coefficients,
                                constraints)
     print(optimizer.begin_optimization(True))
