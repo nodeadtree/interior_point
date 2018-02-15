@@ -85,7 +85,7 @@ class Barrier_Optimizer(object):
     # Uses the damped newton method to find the optimizer for a particular
     # weight of the barrier function
     #
-    # max_runs                -integer, used to set a hard limit to the number
+    # max_runs                - integer, used to set a hard limit to the number
     #                          of iterations used in newton's method
     def newton(self, max_runs=200):
         weight = self.weight
